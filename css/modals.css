@@ -1,0 +1,58 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: var(--bg-color);
+  border: 1px solid var(--neon-cyan);
+  border-radius: 12px;
+  width: 80%;
+  max-width: 800px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 30px rgba(0, 243, 255, 0.2);
+}
+
+.modal-header {
+  padding: 16px;
+  border-bottom: 1px solid var(--glass-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.learn-section {
+  margin-bottom: 30px;
+}
+.learn-section h3 {
+  color: var(--neon-cyan);
+  margin-bottom: 12px;
+}
+.learn-section p {
+  color: var(--text-main);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
